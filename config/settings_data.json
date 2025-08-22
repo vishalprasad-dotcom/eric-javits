@@ -11,9 +11,9 @@
   "current": {
     "logo": "shopify://shop_images/brand_logo_ericjavits_1.png",
     "logo_width": 230,
-    "type_header_font": "assistant_n4",
+    "type_header_font": "playfair_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "montserrat_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -195,6 +195,17 @@
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-73efed2a-6dbe-4cc7-9e1d-19ce36f13525": {
+        "settings": {
+          "background": "#252b42",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }
