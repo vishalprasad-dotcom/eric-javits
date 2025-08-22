@@ -23,6 +23,7 @@
 >
   <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
     {%- if section.settings.show_social and social_icons -%}
+      {{ section.settings.social_text }}
       {%- render 'social-icons' -%}
     {%- endif -%}
     {%- if section.blocks.size == 1 -%}
@@ -206,7 +207,12 @@
     {
       "type": "paragraph",
          "content": "t:sections.announcement-bar.settings.paragraph.content"
-    },             
+    },   
+    {
+      "type": "text",
+      "id": "social_text",
+      "label": "Social Text"
+    },          
     {
       "type": "checkbox",
       "id": "show_social",
