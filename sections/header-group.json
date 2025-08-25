@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Follow Us  and get a chance to win 80% off",
             "link": ""
           }
         }
@@ -28,9 +28,10 @@
       "settings": {
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-73efed2a-6dbe-4cc7-9e1d-19ce36f13525",
         "show_line_separator": true,
-        "show_social": false,
+        "social_text": "Follow Us  :",
+        "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false
       }
