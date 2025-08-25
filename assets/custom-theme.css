@@ -1,9 +1,23 @@
+/*common css starts*/
+:root {
+    --font-montserrat: 'Montserrat';
+    --color-header-menu: #737373;
+}
+p.announcement-bar__message, .vp-soc-text, .vp-header .header__inline-menu .header__menu-item {
+    font-family: var(--font-montserrat);
+    font-size: 1.4rem;
+    line-height: 1.715;
+    letter-spacing: 0.2px;
+}
+
+/*common css ends*/
+
+/*Announcement css starts*/
 .utility-bar__grid--3-col.vr-announcement {
     display: flex;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 1.5rem !important; /*removed the max-width and used the layout width, as it's taking 1200px instead of 1168px.*/
+    padding-right: 1.5rem !important;
     margin: auto;
-    max-width: 1175px;
     justify-content: space-between;
 }
 .vr-announcement .announcement-bar.announcement-bar--one-announcement {
@@ -13,23 +27,25 @@
 .vp-social {
     display: flex;
     gap: 15px;
+    padding-left: 1.5rem;
 }
 .vp-soc-text {
     margin: auto;
 }
 p.announcement-bar__message, .vp-soc-text {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
     font-weight: 500;
-    color: #ffffff;
+    color: rgba(var(--color-foreground), 1);
 }
 .vr-announcement .utility-bar .list-social__link:last-child {
     padding-right: 0;
 }
+.list-social__item .icon:hover {
+    width: 102%;
+}
+/*Announcement css ends*/
+/*Header css starts*/
 .header:not(.drawer-menu).vp-header {
-    padding: 24px 0 22px;
+    padding: 2.4rem 1.5rem 2.2rem;
 }
 .vp-header .header__icons .svg-wrapper, .vp-header .header__icons .header__icon {
     width: unset;
@@ -42,11 +58,7 @@ p.announcement-bar__message, .vp-soc-text {
     padding-right: 0;
 }
 .vp-header .header__inline-menu .header__menu-item {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--color-header-menu);
     font-weight: 700;
 }
 .vp-header .list-menu--inline {
@@ -56,12 +68,10 @@ p.announcement-bar__message, .vp-soc-text {
     gap: 28px;
 }
 .vp-header .header__icons {
-        gap: 26px;
-    }
+    gap: 26px;
+}
+/*Header css starts*/
 @media (min-width: 990px){
-    .page-width {
-        max-width: 1175px;
-    }
     .header.vp-header {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -81,15 +91,8 @@ p.announcement-bar__message, .vp-soc-text {
     }
 }
 
-@media (max-width: 1240px){
-    .utility-bar__grid--3-col.vr-announcement, .header.vp-header {
-        max-width: 95%;
-    }
-}
+/*Announcement and header tablet css starts*/
 @media (max-width: 989px) {
-    .utility-bar__grid--3-col.vr-announcement .list-social {
-        display: block;
-    }
     .utility-bar__grid--3-col.vr-announcement .list-social {
         display: flex;
         margin-left: 0;
@@ -97,6 +100,7 @@ p.announcement-bar__message, .vp-soc-text {
     .vr-announcement .announcement-bar.announcement-bar--one-announcement{
         max-width: 50%;
     }
+    
 }
 @media (max-width:820px){
     .vr-announcement a.link.list-social__link {
@@ -104,7 +108,10 @@ p.announcement-bar__message, .vp-soc-text {
     }
     
 }
+/*Announcement and header tablet css ends*/
+
 @media (max-width: 767px){
+    /*Announcement mobile css starts*/
     .utility-bar__grid--3-col.vr-announcement {
         flex-direction: column;
         align-items: center;
@@ -113,8 +120,8 @@ p.announcement-bar__message, .vp-soc-text {
         max-width: unset;
         justify-content: center;
     }
-    p.announcement-bar__message, .vp-soc-text {
-        font-size: 12px;
-        line-height: 20px;
-    }
+    p.announcement-bar__message, .vp-soc-text, .vp-header .header__inline-menu .header__menu-item {
+        font-size: 1.2rem;
+        line-height: 1.667;    }
+    /*Announcement mobile css ends*/
 }
