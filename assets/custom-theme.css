@@ -188,7 +188,6 @@ p.announcement-bar__message, .vp-soc-text {
 
 /*home banner css starts*/
 .hero.desktop-wrapper {
-    background: url(https://cdn.shopify.com/s/files/1/0614/4190/0599/files/Group_11.png?v=1756314584);
     background-size: cover;
     display: flex;
     align-items: center;
