@@ -71,6 +71,11 @@
         "hero_link_text": "Shop Now"
       }
     },
+    "image_and_text_NkVetb": {
+      "type": "image-and-text",
+      "name": "Image and Text",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -103,6 +108,7 @@
   "order": [
     "image_banner",
     "home_banner_Q6MjRB",
+    "image_and_text_NkVetb",
     "featured_collection"
   ]
 }
