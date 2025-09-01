@@ -74,7 +74,30 @@
     "image_and_text_NkVetb": {
       "type": "image-and-text",
       "name": "Image and Text",
-      "settings": {}
+      "settings": {
+        "txt_heading": "Enjoy Exclusive Benefits",
+        "txt_paragraph": "<ul><li>Our best pricing, plus cash-back rewards</li><li>Free or discounted design services ($349 value per project)</li><li>Dedicated account representative</li><li>Free samples</li><li>Access to our comprehensive Trade Portal</li><li>Our industry-leading warranty, and more</li></ul>",
+        "img_and_txt_image": "shopify://shop_images/portrait-smiling-young-couple_1.png",
+        "txt_block_url": "#",
+        "txt_block_url_txt": "Read More",
+        "reverse_layout": false
+      }
+    },
+    "image_and_text_tFfJwx": {
+      "type": "image-and-text",
+      "custom_css": [
+        ".image-text-container{padding-top: 0;}",
+        ".text-block {text-align: center;}"
+      ],
+      "name": "Image and Text",
+      "settings": {
+        "txt_heading": "Explore New Trends",
+        "txt_paragraph": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution </p>",
+        "img_and_txt_image": "shopify://shop_images/what-kind-hat-is-fashionable-this-season_3.png",
+        "txt_block_url": "#",
+        "txt_block_url_txt": "Read More",
+        "reverse_layout": true
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -109,6 +132,7 @@
     "image_banner",
     "home_banner_Q6MjRB",
     "image_and_text_NkVetb",
+    "image_and_text_tFfJwx",
     "featured_collection"
   ]
 }

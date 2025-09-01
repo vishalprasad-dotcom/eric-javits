@@ -1,19 +1,13 @@
 <section>
     <div class="image-text-container">
-        <div class="image-text-wrapper">
+        <div class="image-text-wrapper {% if section.settings.reverse_layout %}reverse-order{% endif %}">
             <div class="text-block">
-                <h2>Enjoy Exclusive Benefits</h2>
-                <p>Our best pricing, plus cash-back rewards
-                    Free or discounted design services ($349 value per project)
-                    Dedicated account representative
-                    Free samples
-                    Access to our comprehensive Trade Portal
-                    Our industry-leading warranty, and more
-                </p>
-                <a href="#" class="cta">Read More</a>
+                <h2>{{ section.settings.txt_heading }}</h2>
+                <div class="text-block-para">{{ section.settings.txt_paragraph }}</div>
+                <a href="{{ section.settings.txt_block_url }}" class="cta">{{ section.settings.txt_block_url_txt }}</a>
             </div>
             <div class="image-block">
-                <img src="https://cdn.shopify.com/s/files/1/0614/4190/0599/files/portrait-smiling-young-couple_1.png?v=1756490931">            
+                <img src="{{ section.settings.img_and_txt_image | img_url: "master" }}">            
             </div>
         </div>
     </div>
@@ -23,7 +17,39 @@
 {
     "name": "Image and Text",
     "class": "image-and-text",
-    "settings":[],
+    "settings":[
+        {
+        "type": "text",
+        "id": "txt_heading",
+        "label": "Heading"
+        },
+        {
+        "type": "richtext",
+        "id": "txt_paragraph",
+        "label": "Paragraph"
+        },
+        {
+        "type": "image_picker",
+        "id": "img_and_txt_image",
+        "label": "Image"
+        },
+        {
+        "type": "url",
+        "id": "txt_block_url",
+        "label": "Link"
+        },
+        {
+        "type": "text",
+        "id": "txt_block_url_txt",
+        "label": "URL Text"
+        },
+        {
+        "type": "checkbox",
+        "id": "reverse_layout",
+        "label": "Swap image and text",
+        "default": false
+        }
+    ],
     "presets":[
         {
             "name": "Image and Text"
