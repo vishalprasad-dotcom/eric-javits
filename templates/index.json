@@ -86,7 +86,7 @@
     "image_and_text_tFfJwx": {
       "type": "image-and-text",
       "custom_css": [
-        ".image-text-container{padding-top: 0;}",
+        ".image-text-container {padding-top: 0;}",
         ".text-block {text-align: center;}"
       ],
       "name": "Image and Text",
@@ -102,27 +102,27 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
+        "collection": "featured-collections",
+        "products_to_show": 25,
+        "title": "Featured collections",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
+        "columns_desktop": 3,
+        "enable_desktop_slider": true,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 36
       }

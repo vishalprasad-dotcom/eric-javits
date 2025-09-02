@@ -400,3 +400,21 @@ p.announcement-bar__message, .vp-soc-text {
     }
 }
 /*image and text css ends*/
+
+/*featured-collection css starts*/
+.featured-collection-container {
+    max-width: 1168px;
+    margin: auto;
+}
+.slider-container .slide a {
+    text-decoration: none;
+}
+.slide {
+    text-align: center;
+}
+.slider-container .slide p {
+    line-height: 1.95;
+    color: var(--color-para);
+    margin: 1rem 0;
+}
+/*featured-collection css ends*/
