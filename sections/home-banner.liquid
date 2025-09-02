@@ -1,0 +1,74 @@
+{% style %}
+.hero.desktop-wrapper {
+    background: url("{{ section.settings.desktop_bg | img_url: "master" }}");
+}
+{% endstyle %}
+<section>
+  <div class="hero mobile-wrapper">
+    <div class="hero-mob-img">
+      <img src="{{ section.settings.mobile_bg | img_url: "master" }}">
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h2>{{ section.settings.hero_heading }}</h2>
+        <p>{{ section.settings.hero_paragraph }}</p>
+        <a href="{{section.settings.hero_link  }}" class="cta">{{ section.settings.hero_link_text }}</a>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="hero desktop-wrapper">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h2>{{ section.settings.hero_heading }}</h2>
+        <p>{{ section.settings.hero_paragraph }}</p>
+        <a href="{{section.settings.hero_link  }}" class="cta">{{ section.settings.hero_link_text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home Banner",
+  "class": "home-banner",
+  "settings": [ 
+    {
+      "type": "image_picker",
+      "id": "desktop_bg",
+      "label": "Desktop Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_bg",
+      "label": "Mobile Background Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "hero_paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "url",
+      "id": "hero_link",
+      "label": "Hero link"
+    },
+    {
+      "type": "text",
+      "id": "hero_link_text",
+      "label": "Hero Link Text"
+    }
+   ],
+  "presets": [
+    {
+      "name": "Homepage Banner"
+    }
+  ]
+}
+{% endschema %}
