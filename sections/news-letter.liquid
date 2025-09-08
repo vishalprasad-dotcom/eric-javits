@@ -1,0 +1,55 @@
+<section class="news-letter">
+    <div class="news-letter-container">
+        <div class="news-letter-content">
+            <h2>{{ section.settings.news_letter_heading }}</h2>
+            {% form 'contact', id: 'news-letter-form' %}
+
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="news-letter-name">Name</label>
+                        <input id="news-letter-name" type="text" name="contact[name]" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="news-letter-email">Email</label>
+                        <input id="news-letter-email" type="email" name="contact[email]" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="news-letter-phone">Mobile No.</label>
+                        <input id="news-letter-phone" type="number" name="contact[phone]" required>
+                    </div>
+                    <button class="cta" type="submit">Submit</button>
+                </div>
+            {% endform %}
+        </div>
+        <div class="news-letter-img">
+            {% if section.settings.side_image != blank %}
+                <img src="{{ section.settings.side_image | img_url: 'master' }}">
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "News Letter",
+    "settings":[
+        {
+            "type": "text",
+            "id": "news_letter_heading",
+            "label": "Heading"
+        },
+        {
+            "type": "image_picker",
+            "id": "side_image",
+            "label": "Image"
+        }
+    ],
+    "presets":[
+        {
+            "name": "News Letter"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,59 @@
+<section>
+    <div class="image-text-container">
+        <div class="image-text-wrapper {% if section.settings.reverse_layout %}reverse-order{% endif %}">
+            <div class="text-block">
+                <h2>{{ section.settings.txt_heading }}</h2>
+                <div class="text-block-para">{{ section.settings.txt_paragraph }}</div>
+                <a href="{{ section.settings.txt_block_url }}" class="cta">{{ section.settings.txt_block_url_txt }}</a>
+            </div>
+            <div class="image-block">
+                <img src="{{ section.settings.img_and_txt_image | img_url: "master" }}">            
+            </div>
+        </div>
+    </div>
+
+</section>
+{% schema %}
+{
+    "name": "Image and Text",
+    "class": "image-and-text",
+    "settings":[
+        {
+        "type": "text",
+        "id": "txt_heading",
+        "label": "Heading"
+        },
+        {
+        "type": "richtext",
+        "id": "txt_paragraph",
+        "label": "Paragraph"
+        },
+        {
+        "type": "image_picker",
+        "id": "img_and_txt_image",
+        "label": "Image"
+        },
+        {
+        "type": "url",
+        "id": "txt_block_url",
+        "label": "Link"
+        },
+        {
+        "type": "text",
+        "id": "txt_block_url_txt",
+        "label": "URL Text"
+        },
+        {
+        "type": "checkbox",
+        "id": "reverse_layout",
+        "label": "Swap image and text",
+        "default": false
+        }
+    ],
+    "presets":[
+        {
+            "name": "Image and Text"
+        }
+    ]
+}
+{% endschema %}
