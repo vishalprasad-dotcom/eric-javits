@@ -15,16 +15,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Explore Eric Javits Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_h6aNHa": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Shop Now",
+            "button_link_1": "#",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -33,52 +40,78 @@
       },
       "block_order": [
         "heading",
+        "text_h6aNHa",
         "button"
       ],
+      "disabled": true,
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "image": "shopify://shop_images/Group_11.png",
+        "image_2": "shopify://shop_images/mobile-banner.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
         "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-1866fdb8-dfa5-410c-aecf-921b849da541",
+        "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": true
+      }
+    },
+    "home_banner_Q6MjRB": {
+      "type": "home-banner",
+      "name": "Homepage Banner",
+      "settings": {
+        "desktop_bg": "shopify://shop_images/Group_11.png",
+        "mobile_bg": "shopify://shop_images/mobile-banner.webp",
+        "hero_heading": "Explore Eric Javits Collection",
+        "hero_paragraph": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text",
+        "hero_link": "#",
+        "hero_link_text": "Shop Now"
+      }
+    },
+    "image_and_text_NkVetb": {
+      "type": "image-and-text",
+      "name": "Image and Text",
+      "settings": {
+        "txt_heading": "Enjoy Exclusive Benefits",
+        "txt_paragraph": "<ul><li>Our best pricing, plus cash-back rewards</li><li>Free or discounted design services ($349 value per project)</li><li>Dedicated account representative</li><li>Free samples</li><li>Access to our comprehensive Trade Portal</li><li>Our industry-leading warranty, and more</li></ul>",
+        "img_and_txt_image": "shopify://shop_images/portrait-smiling-young-couple_1.png",
+        "txt_block_url": "#",
+        "txt_block_url_txt": "Read More",
+        "reverse_layout": false
+      }
+    },
+    "image_and_text_tFfJwx": {
+      "type": "image-and-text",
+      "custom_css": [
+        ".image-text-container {padding-top: 0;}",
+        ".text-block {text-align: center;}"
+      ],
+      "name": "Image and Text",
+      "settings": {
+        "txt_heading": "Explore New Trends",
+        "txt_paragraph": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution </p>",
+        "img_and_txt_image": "shopify://shop_images/what-kind-hat-is-fashionable-this-season_3.png",
+        "txt_block_url": "#",
+        "txt_block_url_txt": "Read More",
+        "reverse_layout": true
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "featured_collection_heading": "Featured collections",
+        "collection": "featured-collections"
       }
     }
   },
   "order": [
     "image_banner",
+    "home_banner_Q6MjRB",
+    "image_and_text_NkVetb",
+    "image_and_text_tFfJwx",
     "featured_collection"
   ]
 }
