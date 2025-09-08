@@ -105,6 +105,14 @@
         "featured_collection_heading": "Featured collections",
         "collection": "featured-collections"
       }
+    },
+    "news_letter_APdVUj": {
+      "type": "news-letter",
+      "name": "News Letter",
+      "settings": {
+        "news_letter_heading": "Sign Up and Get 10% off your first order",
+        "side_image": "shopify://shop_images/fall-studio-shot-two-models-with-blond-wavy-hairstyle-wool-straw-hat-wearing-striped.png"
+      }
     }
   },
   "order": [
@@ -112,6 +120,7 @@
     "home_banner_Q6MjRB",
     "image_and_text_NkVetb",
     "image_and_text_tFfJwx",
-    "featured_collection"
+    "featured_collection",
+    "news_letter_APdVUj"
   ]
 }
